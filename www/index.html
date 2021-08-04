@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>FachadaBot</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>FachadaBot - TCC Engenharia CA</h1> 
+        <img src="robociencia.jpg" 
+        style="border-radius: 50%" 
+        width="100" height="100" 
+        alt="robo">
+    </header>
+
+
+    <section>
+
+	
+
+        <table style="width:100%; height: 100%;">
+
+	    <tr>
+	    	<td>     
+            	</td>
+                <td>
+		    <img src="http://localhost:81/?action=stream" style="transform:rotate(180deg)" />
+                </td>   
+                </td>
+            </tr>
+            <tr>
+                <th>
+                    <button style="height: 50.0px;width: 50.0px;
+                        padding-left: 5px"; onclick="bombaon()">
+                        <img src="bombaon.jpg" style="height: 100%; width: 100%" >
+                    </button>  
+                </th>
+                <th>
+                    <input type="range" min="0" max="80" step="20" value="0" class="slider" id="servo01" onmouseup="servo01()" ontouchend="servo01()">                    
+                </th> 
+                <th>
+                    <button style="height: 50.0px;width: 50.0px;
+                        padding-left: 5px"; onclick="bombaoff()">
+                        <img src="bombaoff.jpg" style="height: 100%; width: 100%" >
+                    </button>    
+                </th>
+            </tr>
+
+            <tr>
+                <td>
+                    <button style="height: 50.0px;width: 50.0px;
+                        padding-left: 5px"; onclick="esponjaon()">
+                        <img src="esponjaon.png" style="height: 100%; width: 100%" >
+                    </button>  
+                </td>
+                <td>
+                </td> 
+                <td>
+                    <button style="height: 50.0px;width: 50.0px;
+                        padding-left: 5px"; onclick="esponjaoff()">
+                        <img src="esponjaoff.png" style="height: 100%; width: 100%" >
+                    </button>    
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                </td>
+                <td>
+                    <button style="height: 50.0px;width: 50.0px;
+                        padding-left: 5px"; onmousedown="cimaon()"; onmouseup="cimaoff()">
+                        <img src="setac.jpg" style="height: 100%; width: 100%" >
+                    </button>    
+                </td>
+                <td>
+                </td>
+            </tr>
+
+            <tr>
+              <td>
+                  <button style="height: 50.0px;width: 50.0px;
+                padding-left: 5px"><img src="setae.jpg" style="height: 100%; width: 100%"; onmousedown="esquerdaon()"; onmouseup="esquerdaoff()">
+            </button>     
+            </td>
+              <td>
+                  <button style="height: 50.0px;width: 50.0px;
+                    "><img src="camera.jpg" style="height: 100%; width: 100%"; onclick="camera()" >
+                </button> 
+            </td>
+              <td><button style="height: 50.0px;width: 50.0px;
+                padding-left: 5px"><img src="setad.jpg" style="height: 100%; width: 100%"; onmousedown="direitaon()"; onmouseup="esquerdaoff()" >
+            </button>     
+            </td>
+            </tr>
+
+            <tr>
+              <td></td>
+              <td><button style="height: 50.0px;width: 50.0px;
+                padding-left: 5px"><img src="setab.jpg" style="height: 100%; width: 100%"; onmousedown="baixoon()"; onmouseup="cimaoff()">
+                </button> 
+                </td>
+              <td></td>
+            </tr>
+            
+        </table>
+
+    </section>
+
+    <footer>
+        <br>UNIP
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
